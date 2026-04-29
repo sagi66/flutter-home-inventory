@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'room_items_screen.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final Box appBox;
+  const HomeScreen({super.key, required this.appBox});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
